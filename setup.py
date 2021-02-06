@@ -4,6 +4,10 @@ from setuptools import setup, find_packages
 VERSION = '0.1.1'
 __version__ = VERSION
 
+def parse_requirements_file(filename):
+    with open(filename) as f:
+        requires = [l.strip() for l in f.readlines() if not l.startswith("#")]
+    return requires
 
 setup(
     name='ClusterEnsembles',  
@@ -30,10 +34,6 @@ setup(
         'Operating System :: OS Independent',
     ],
 
-    install_requires=[
-        'numpy',
-        'networkx',
-        'pymetis',
-        'scikit-learn', 
-    ]
+
+    install_requires=parse_requirements_file('requirements.txt')
 )
