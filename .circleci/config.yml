@@ -1,21 +1,29 @@
-version: 2.1
-
-orbs:
-  python: circleci/python@0.2.1
+# config.yml
+version: 2
 
 jobs:
   build-and-test:
-    executor: python/default
+    docker:
+      - image: circleci/python:3.8.7
+
     steps:
-      - checkout
-      - python/load-cache
-      - python/install-deps
-      - python/save-cache
+      - checkout      
+      - restore_cache:
+          keys:
+            - pip--{{ checksum "requirements.txt" }}
       - run:
-          command: python3.8 -m unittest -v
+          name: Install dependencies
+          command: pip install --user -r requirements.txt
+      - save_cache:
+          key: pip--{{ checksum "requirements.txt" }}
+          paths: /home/circleci/.local/bin/
+
+      - run:
+          command: python -m unittest -v
           name: Test
 
 workflows:
-  main:
+  version: 2
+  workflows:
     jobs:
       - build-and-test
