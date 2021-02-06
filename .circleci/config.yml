@@ -23,7 +23,6 @@ jobs:
           name: Test
 
 workflows:
-  version: 2
-  workflows:
+  main:
     jobs:
       - build-and-test
