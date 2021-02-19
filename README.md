@@ -43,17 +43,14 @@ Simple example of cluster ensembles in the reference [1]
 ```
 
 - `nclass`: Number of classes in a consensus cluster
-- `solver`: {'mcla', 'hbgf'}
+- `solver`: {'cspa', 'mcla', 'hbgf'}
     
+    `cspa`: Cluster-based Similarity Partitioning Algorithm [1]
+
     `mcla`: Meta-CLustering Algorithm [1]
     
     `hbgf`: Hybrid Bipartite Graph Formulation [2]
 
-
-TODO
-----
-
-- Bayesian cluster ensembles [3]
 
 Similar Project
 ---------------
