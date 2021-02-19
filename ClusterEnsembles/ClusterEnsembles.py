@@ -28,10 +28,10 @@ def create_hypergraph(base_clusters):
         unique_bc = np.unique(bc[~np.isnan(bc)])
         len_unique_bc = len(unique_bc)
         bc2id = dict(zip(unique_bc, np.arange(len_unique_bc)))
-        h = np.zeros((len_bcs, len_unique_bc))
+        h = np.zeros((len_bcs, len_unique_bc), dtype=int)
         for i, elem_bc in enumerate(bc):
             if not np.isnan(elem_bc):
-                h[i, bc2id[elem_bc]] = 1.0
+                h[i, bc2id[elem_bc]] = 1
         if H is None:
             H = h
         else:
