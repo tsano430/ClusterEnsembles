@@ -20,5 +20,3 @@ class HBGFTest(unittest.TestCase):
         label_pred = CE.cluster_ensembles(base_clusters, solver='hbgf')
         nmi_score = normalized_mutual_info_score(label_true, label_pred, average_method='geometric')
         self.assertEqual(1.0, nmi_score)
-
-

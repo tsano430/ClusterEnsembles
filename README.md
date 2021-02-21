@@ -51,6 +51,8 @@ Simple example of cluster ensembles in the reference [1]
     
     `hbgf`: Hybrid Bipartite Graph Formulation [2]
 
+    `nmf`: NMF-based consensus clustering [4]
+
 
 Similar Project
 ---------------
@@ -71,3 +73,7 @@ In Proceedings of the Twenty-First International Conference on Machine Learning,
 [3] J. Ghosh and A. Acharya, 
 "Cluster ensembles," 
 Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery, vol. 1, no. 4, pp. 305-315, 2011. 
+
+[4] T. Li, C. Ding, and M. I. Jordan, 
+"Solving consensus and semi-supervised clustering problems using nonnegative matrix factorization," 
+In Proceedings of the Seventh IEEE International Conference on Data Mining, pp. 577-582, 2007.
