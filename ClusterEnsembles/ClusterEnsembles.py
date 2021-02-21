@@ -5,7 +5,6 @@
 
 
 import numpy as np
-import networkx as nx
 import pymetis
 from sklearn.metrics import pairwise_distances
 
