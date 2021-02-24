@@ -1,7 +1,7 @@
 # ClusterEnsembles
 
 [![CircleCI](https://circleci.com/gh/tsano430/ClusterEnsembles.svg?style=shield)](https://app.circleci.com/pipelines/github/tsano430/ClusterEnsembles)
-[![codecov](https://codecov.io/gh/tsano430/ClusterEnsembles/branch/main/graph/badge.svg)](https://codecov.io/gh/tsano430/ClusterEnsembles)
+[![codecov](https://codecov.io/gh/tsano430/ClusterEnsembles/branch/main/graph/badge.svg?token=CT0WEH2O5T)](https://codecov.io/gh/tsano430/ClusterEnsembles)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A Python package for cluster ensembles. Cluster ensembles generate a single consensus cluster using base clusters obtained from multiple clustering algorithms. The consensus cluster stably achieves a high clustering performance. 
