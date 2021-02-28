@@ -44,7 +44,7 @@ Simple example of cluster ensembles in the reference [1]
 ```
 
 - `nclass`: Number of classes in a consensus cluster
-- `solver`: {'cspa', 'mcla', 'hbgf', 'nmf'}
+- `solver`: {'cspa', 'mcla', 'hbgf', 'nmf', 'all'}
     
     `cspa`: Cluster-based Similarity Partitioning Algorithm [1]
 
@@ -53,6 +53,8 @@ Simple example of cluster ensembles in the reference [1]
     `hbgf`: Hybrid Bipartite Graph Formulation [2]
 
     `nmf`: NMF-based consensus clustering [4]
+
+    `all`: Use all solvers, and then return the consensus clustering label that gives the smallest objective function value. 
 
     **Note:** Please use `hbgf` for large-scale `base_clusters`.
 
