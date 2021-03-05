@@ -2,3 +2,4 @@
 numpy >= 1.19.5
 pymetis >= 2020.1
 scikit-learn >= 0.24.1
+kahypar >= 1.1.3
