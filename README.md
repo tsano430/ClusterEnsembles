@@ -4,7 +4,7 @@
 [![codecov](https://codecov.io/gh/tsano430/ClusterEnsembles/branch/main/graph/badge.svg?token=CT0WEH2O5T)](https://codecov.io/gh/tsano430/ClusterEnsembles)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A Python package for cluster ensembles. Cluster ensembles generate a single consensus cluster $\hat{\lambda}$ using base clusters $\lambda^{(1)}, \lambda^{(2)}, \ldots, \lambda^{(r)}$ obtained from multiple clustering algorithms. The consensus cluster stably achieves a high clustering performance. 
+A Python package for cluster ensembles. Cluster ensembles generate a single consensus cluster using base clusters obtained from multiple clustering algorithms. The consensus cluster stably achieves a high clustering performance. 
 
 <p align="center">
   <img width="600" src="https://user-images.githubusercontent.com/60049342/107722358-17c47a00-6d22-11eb-9040-b13b92f97ba1.png">
