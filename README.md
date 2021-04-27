@@ -69,7 +69,7 @@ Simple example of cluster ensembles in the reference [1].
     'all': The consensus clustering label with the largest objective function value [1] is returned among the results of all solvers. 
     
     <p align="center">
-      <img width="600" src="https://user-images.githubusercontent.com/60049342/110207481-14f31a00-7ec7-11eb-96cf-4e03a6ad8990.png">
+      <img width="600" src="https://user-images.githubusercontent.com/60049342/116185712-20dbb980-a75d-11eb-87cb-ae0e68179674.png">
     </p>
 
     **Note:** Please use 'hbgf' for large-scale `base_clusters`.
